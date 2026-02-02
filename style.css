@@ -1,7 +1,7 @@
 /* 
 1. I created layout identical to figma design for mobile device (412px-wide)
-2. Used LLM to recalculate sizings (from px to vw and rem), to make it adaptable for <576px-wide devices 
-3. Used media queries to change layout and sizing for screens >576px-wide
+2. Used LLM to recalculate sizings (from px to vw and rem), to make it adaptable for <576px-wide devices. Recalculate some values manually using online calculator
+3. Used media querie to change layout and sizing for screens >576px-wide
 */
 
 *,
@@ -162,16 +162,26 @@ header {
 }
 
 .checklist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.checklist-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+}
+
 .checklist-item {
   display: flex;
   align-items: center;
-  margin-bottom: 7vw;
   gap: 2vw;
+  padding: 2.5vw;
   font-family: var(--font-secondary);
 }
 
@@ -184,6 +194,10 @@ header {
   font-size: 2rem;
   text-align: left;
   color: var(--color-text-secondary);
+}
+
+.img-woman {
+  display: none;
 }
 
 .how-it-works {
@@ -209,10 +223,17 @@ header {
   border-radius: 7vw;
 }
 
+.item-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vw;
+}
+
 .how-it-works-title {
   font-size: 3rem;
   text-align: left;
-  align-self: flex-start;
 }
 
 .accent-highlight {
@@ -225,7 +246,6 @@ header {
   font-size: 2rem;
   color: var(--color-text-primary);
   text-align: left;
-  align-self: flex-start;
 }
 
 .insights {
@@ -324,15 +344,6 @@ header {
   font-size: 2rem;
 }
 
-.footer-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2vw;
-  display: block;
-  text-decoration: none;
-  color: #fff;
-}
-
 .footer-links-container {
   display: flex;
   gap: 7vw;
@@ -345,4 +356,291 @@ header {
 
 .footer-heading {
   color: var(--color-bg);
+}
+
+@media (min-width: 576px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    color: var(--color-headers);
+  }
+
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav li {
+    display: inline;
+    padding: 10px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: var(--color-headers);
+    font-size: 16px;
+    font-family: var(--font-secondary);
+  }
+
+  .nav a:hover {
+    color: var(--color-accent);
+  }
+
+  .login-btn {
+    display: inline;
+    background-color: var(--color-headers);
+    color: var(--color-bg);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-bold);
+    justify-self: end;
+  }
+
+  .login-btn:hover {
+    filter: brightness(1);
+  }
+
+  .hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 150px 100px;
+  }
+
+  .hero-subtitle {
+    width: 650px;
+    text-align: center;
+  }
+
+  .cta-btn {
+    font-size: 24px;
+    padding: 15px 25px;
+    border-radius: 35px;
+    line-height: 1.5;
+  }
+
+  .who-is-it-for {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    margin: 0 25px;
+    padding: 40px 85px;
+    border-radius: 25px;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .dark-section {
+    color: var(--color-text-primary-dark);
+  }
+
+  .checklist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 700px;
+  }
+
+  .checklist-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+  }
+
+  .checklist-header h2,
+  p {
+    text-align: left;
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-family: var(--font-secondary);
+  }
+
+  .checklist-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .checklist-text {
+    font-size: 24px;
+  }
+
+  .img-woman {
+    display: block;
+    height: 880px;
+  }
+
+  .how-it-works {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 150px 110px;
+  }
+
+  .how-it-works-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: auto;
+    padding: 30px 0;
+  }
+
+  .how-it-works-img {
+    width: 750px;
+    height: 450px;
+    border-radius: 30px;
+  }
+
+  .right-img {
+    order: 1;
+  }
+
+  .item-text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+    max-width: 450px;
+  }
+
+  .how-it-works-title {
+    font-size: 28px;
+  }
+
+  .how-it-works-text {
+    font-size: 16px;
+  }
+
+  .insights {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 50px;
+  }
+
+  .insight-card-container {
+    flex-direction: row;
+    gap: 25px;
+    padding: 40px 0;
+  }
+
+  .insights-text {
+    text-align: center;
+    max-width: 550px;
+  }
+
+  .insight-card {
+    gap: 40px;
+    width: 440px;
+    height: 440px;
+    padding: 75px;
+    border-radius: 50px;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, 0.1);
+  }
+
+  .insight-card-title {
+    font-size: 32px;
+  }
+
+  .insight-card-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cta {
+    gap: 35px;
+    padding: 100px;
+  }
+
+  .site-footer {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+  }
+
+  .site-footer a,
+  .site-footer p,
+  .site-footer h3 {
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .footer-links-container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-heading {
+    color: var(--color-bg);
+  }
 }
