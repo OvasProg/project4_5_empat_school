@@ -103,6 +103,11 @@ header {
   border: none;
 }
 
+.menu-icon {
+  width: 5vw;
+  height: 5vw;
+}
+
 .menu-toggle:hover {
   filter: brightness(1);
 }
