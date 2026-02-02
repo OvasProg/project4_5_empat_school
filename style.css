@@ -360,18 +360,18 @@ header {
   color: var(--color-bg);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36em) {
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-size: 56px;
+    font-size: 2rem;
   }
 
   p {
-    font-size: 24px;
+    font-size: 1rem;
   }
 
   header {
@@ -379,13 +379,13 @@ header {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     background: transparent;
-    padding: 10px 30px;
+    padding: 0.5rem 1rem;
     border-radius: 0;
     margin: 0;
   }
 
   .logo {
-    font-size: 32px;
+    font-size: 1rem;
   }
 
   .menu-toggle {
@@ -400,7 +400,7 @@ header {
   .nav ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 0.5rem;
     padding: 0;
     margin: 0;
     justify-content: center;
@@ -409,13 +409,13 @@ header {
 
   .nav li {
     display: inline;
-    padding: 10px;
+    padding: 0.5rem;
   }
 
   .nav a {
     text-decoration: none;
     color: var(--color-headers);
-    font-size: 16px;
+    font-size: 0.5rem;
     font-family: var(--font-secondary);
   }
 
@@ -427,11 +427,11 @@ header {
     display: inline;
     background-color: var(--color-headers);
     color: var(--color-bg);
-    padding: 10px 25px;
-    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
     border: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 0.5rem;
     font-family: var(--font-secondary);
     font-weight: var(--fw-bold);
     justify-self: end;
@@ -446,19 +446,19 @@ header {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
-    padding: 150px 100px;
+    gap: 1rem;
+    padding: 5rem 3.5rem;
   }
 
   .hero-subtitle {
-    width: 650px;
+    max-width: 22.5rem;
     text-align: center;
   }
 
   .cta-btn {
-    font-size: 24px;
-    padding: 15px 25px;
-    border-radius: 35px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
     line-height: 1.5;
   }
 
@@ -466,12 +466,11 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-
-    margin: 0 25px;
-    padding: 40px 85px;
-    border-radius: 25px;
+    margin: 0 1rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0.5rem;
     flex-direction: row;
   }
 
@@ -483,18 +482,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 0.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
-    max-width: 700px;
+    max-width: 24.5rem;
   }
 
   .checklist-header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 45px;
+    gap: 1.5rem;
   }
 
   .checklist-header h2,
@@ -505,23 +504,23 @@ header {
   .checklist-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 0.5rem;
+    padding: 0.5rem;
     font-family: var(--font-secondary);
   }
 
   .checklist-icon {
-    width: 19px;
-    height: 19px;
+    width: 1rem;
+    height: 1rem;
   }
 
   .checklist-text {
-    font-size: 24px;
+    font-size: 1rem;
   }
 
   .img-woman {
     display: block;
-    height: 680px;
+    height: 23.5rem;
   }
 
   .how-it-works {
@@ -529,8 +528,8 @@ header {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
-    padding: 150px 110px;
+    gap: 1rem;
+    padding: 5rem 4rem;
   }
 
   .how-it-works-item {
@@ -539,13 +538,13 @@ header {
     justify-content: center;
     align-items: stretch;
     gap: auto;
-    padding: 30px 0;
+    padding: 1rem 0;
   }
 
   .how-it-works-img {
-    width: 750px;
-    height: 450px;
-    border-radius: 30px;
+    width: 26rem;
+    height: 15.5rem;
+    border-radius: 1rem;
   }
 
   .right-img {
@@ -557,16 +556,16 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
-    max-width: 450px;
+    gap: 0.5rem;
+    max-width: 15.5rem;
   }
 
   .how-it-works-title {
-    font-size: 28px;
+    font-size: 1rem;
   }
 
   .how-it-works-text {
-    font-size: 16px;
+    font-size: 0.7rem;
   }
 
   .insights {
@@ -574,67 +573,67 @@ header {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 40px;
-    padding: 40px 50px;
+    gap: 1.5rem;
+    padding: 1.5rem 1.5rem;
   }
 
   .insight-card-container {
     flex-direction: row;
-    gap: 25px;
-    padding: 40px 0;
+    gap: 1rem;
+    padding: 1.5rem 0;
   }
 
   .insights-text {
     text-align: center;
-    max-width: 550px;
+    max-width: 19rem;
   }
 
   .insight-card {
-    gap: 40px;
-    width: 440px;
-    height: 440px;
-    padding: 75px;
-    border-radius: 50px;
+    gap: 1.5rem;
+    width: 15.5rem;
+    height: 15.5rem;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
     box-shadow: 0 2vw 2vw rgba(0, 0, 0, 0.1);
   }
 
   .insight-card-title {
-    font-size: 32px;
+    font-size: 1rem;
   }
 
   .insight-card-img {
-    width: 200px;
-    height: 200px;
+    width: 7rem;
+    height: 7rem;
   }
 
   .cta {
-    gap: 35px;
-    padding: 100px;
+    gap: 1rem;
+    padding: 3.5rem;
   }
 
   .site-footer {
-    padding: 30px 0;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 400px;
+    gap: 14rem;
   }
 
   .site-footer a,
   .site-footer p,
   .site-footer h3 {
-    font-size: 12px;
+    font-size: 0.5rem;
   }
 
   .footer-title {
-    font-size: 16px;
+    font-size: 0.5rem;
     text-align: left;
   }
 
   .footer-links-container {
     display: flex;
-    gap: 30px;
+    gap: 1rem;
   }
 
   .footer-column {
