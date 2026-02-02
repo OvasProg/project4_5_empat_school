@@ -58,15 +58,15 @@ h6 {
   font-family: var(--font-primary);
   font-weight: var(--fw-bold);
   color: var(--color-headers);
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 p {
   font-family: var(--font-secondary);
   font-weight: var(--fw-semibold);
-  color: var(--color-text-secondary);
-  font-size: 2rem;
+  color: var(--color-text-primary);
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -86,7 +86,7 @@ header {
   -webkit-background-clip: text;
   color: transparent;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .menu-toggle {
@@ -183,6 +183,7 @@ header {
 .checklist-text {
   font-size: 2rem;
   text-align: left;
+  color: var(--color-text-secondary);
 }
 
 .how-it-works {
@@ -198,19 +199,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 4vw;
 }
 
 .how-it-works-img {
   width: 87vw;
-  height: 49vw;
+  height: 55vw;
   border-radius: 7vw;
 }
 
 .how-it-works-title {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
+  align-self: flex-start;
 }
 
 .accent-highlight {
@@ -223,6 +225,7 @@ header {
   font-size: 2rem;
   color: var(--color-text-primary);
   text-align: left;
+  align-self: flex-start;
 }
 
 .insights {
@@ -259,7 +262,7 @@ header {
 
 .insight-card-title {
   font-family: var(--font-secondary);
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -305,7 +308,7 @@ header {
 .site-footer a,
 .site-footer p,
 .site-footer h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   font-family: var(--font-secondary);
   text-align: left;
