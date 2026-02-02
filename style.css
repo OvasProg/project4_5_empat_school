@@ -60,6 +60,7 @@ h6 {
   color: var(--color-headers);
   font-size: 4rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 p {
@@ -68,6 +69,7 @@ p {
   color: var(--color-text-primary);
   font-size: 2.5rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 header {
@@ -519,7 +521,7 @@ header {
 
   .img-woman {
     display: block;
-    height: 880px;
+    height: 680px;
   }
 
   .how-it-works {
@@ -555,7 +557,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 2vw;
+    gap: 10px;
     max-width: 450px;
   }
 
