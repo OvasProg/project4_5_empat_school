@@ -220,8 +220,10 @@ header {
 }
 
 .how-it-works-img {
-  width: 87vw;
-  height: 55vw;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
   border-radius: 7vw;
 }
 
@@ -542,14 +544,14 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: auto;
     padding: 1rem 0;
   }
 
   .how-it-works-img {
-    width: 26rem;
-    height: 15.5rem;
+    width: 45%;
+    max-width: 26rem;
     border-radius: 1rem;
   }
 
