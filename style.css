@@ -499,7 +499,7 @@ header {
   }
 
   .checklist-header h2,
-  p {
+  .checklist-header p {
     text-align: left;
   }
 
