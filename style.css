@@ -26,9 +26,9 @@ body {
   --color-bg: #fbfbf8;
   --color-bg-dark: #c2b3ec;
   --color-headers: #000000;
-  --color-text-primary: #999999;
+  --color-text-primary: #747474;
   --color-text-primary-dark: #555555;
-  --color-text-secondary: #666666;
+  --color-text-secondary: #2a3e5c;
   --color-accent: linear-gradient(
     90deg,
     rgba(79, 70, 229, 1) 0%,
@@ -50,10 +50,10 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-inline: clamp(1rem, 4vw, 4rem);
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 clamp(1rem, 6vw, 10rem);
 }
 
 h1,
@@ -65,7 +65,7 @@ h6 {
   font-family: var(--font-primary);
   font-weight: var(--fw-bold);
   color: var(--color-headers);
-  font-size: 4rem;
+  font-size: 1.8rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -74,7 +74,7 @@ p {
   font-family: var(--font-secondary);
   font-weight: var(--fw-semibold);
   color: var(--color-text-primary);
-  font-size: 2.5rem;
+  font-size: 1.1rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -86,7 +86,7 @@ header {
   background: rgba(194, 179, 236, 1);
   padding: 5vw 5vw;
   border-radius: 5vw;
-  margin: 2vw 5vw;
+  margin: 3vw 5vw;
 }
 
 .logo {
@@ -95,7 +95,7 @@ header {
   -webkit-background-clip: text;
   color: transparent;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 1.4rem;
 }
 
 .menu-toggle {
@@ -103,8 +103,8 @@ header {
   color: var(--color-bg);
   padding: 1vw;
   border-radius: 2vw;
-  width: 9vw;
-  height: 9vw;
+  width: 10vw;
+  height: 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,14 +131,14 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 9vw;
-  padding: 12vw 6vw;
+  gap: 7vw;
+  padding: 10vw 6vw;
 }
 
 .cta-btn {
   font-family: var(--font-secondary);
   font-weight: var(--fw-semibold);
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: var(--color-bg);
   padding: 4vw 6vw;
   border-radius: 9vw;
@@ -160,20 +160,21 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 5vw;
-  margin: 12vw 0;
-  padding: 12vw;
+  margin: 10vw 0;
+  padding: 12vw 6vw;
   border-radius: 6vw;
   background-color: var(--color-bg-dark);
 }
 
 .dark-section {
   color: var(--color-text-primary-dark);
+  max-width: 35rem;
 }
 
 .checklist-container {
   display: flex;
   flex-direction: column;
-  gap: 2.5vw;
+  gap: 2vw;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -200,7 +201,7 @@ header {
 }
 
 .checklist-text {
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: left;
   color: var(--color-text-secondary);
 }
@@ -214,8 +215,8 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 17vw;
-  padding: 12vw 0;
+  gap: 12vw;
+  padding: 10vw 0;
 }
 
 .how-it-works-item {
@@ -243,7 +244,7 @@ header {
 }
 
 .how-it-works-title {
-  font-size: 3rem;
+  font-size: 1.4rem;
   text-align: left;
 }
 
@@ -254,7 +255,7 @@ header {
 }
 
 .how-it-works-text {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
   text-align: left;
 }
@@ -265,7 +266,7 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 7vw;
-  padding: 12vw 0;
+  padding: 10vw 0;
 }
 
 .insight-card-container {
@@ -295,12 +296,12 @@ header {
 
 .insight-card-title {
   font-family: var(--font-secondary);
-  font-size: 3rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .insight-card-img {
-  width: 50%;
+  width: 60%;
   height: auto;
 }
 
@@ -338,10 +339,14 @@ header {
   gap: 7vw;
 }
 
+.site-footer h2 {
+  font-size: 0.9rem;
+}
+
 .site-footer a,
 .site-footer p,
 .site-footer h3 {
-  font-size: 1.5rem;
+  font-size: 0.65rem;
   text-decoration: none;
   font-family: var(--font-secondary);
   text-align: left;
@@ -383,6 +388,13 @@ header {
 
   p {
     font-size: 1.2rem;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 clamp(1rem, 7.7vw, 10rem);
   }
 
   header {
@@ -464,7 +476,7 @@ header {
   }
 
   .hero-subtitle {
-    max-width: 25rem;
+    max-width: 35rem;
     text-align: center;
   }
 
@@ -504,7 +516,6 @@ header {
   .checklist-text {
     font-size: 1rem;
     text-align: left;
-    color: var(--color-text-secondary);
   }
 
   .img-woman {
@@ -577,7 +588,7 @@ header {
 
   .insights-text {
     text-align: center;
-    max-width: 25rem;
+    max-width: 35rem;
   }
 
   .insight-card {
@@ -637,4 +648,28 @@ header {
   .footer-heading {
     color: var(--color-bg);
   }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 clamp(4rem, 16vw, 24rem);
+  }
+
+  /* .how-it-works-img {
+    flex: 0;
+  }
+
+  .insight-card-container {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .insight-card {
+    max-width: 25%;
+  } */
 }
