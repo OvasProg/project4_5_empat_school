@@ -47,6 +47,9 @@ body {
   color: var(--color-headers);
   font-family: var(--font-primary);
   font-weight: var(--fw-bold);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -128,6 +131,11 @@ header {
 .nav,
 .login-btn {
   display: none;
+}
+
+main {
+  flex: 1;
+  width: 100%;
 }
 
 #hero {
@@ -378,6 +386,104 @@ header {
 
 .footer-heading {
   color: var(--color-bg);
+}
+
+/* =========================================
+   BLOG PAGE LAYOUT
+   ========================================= */
+
+.blog-container {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 clamp(1rem, 10vw, 10rem);
+}
+
+.blog-layout {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35vw;
+  padding-bottom: 20vw;
+  gap: 8vw;
+}
+
+.blog-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+.blog-title {
+  text-align: left;
+}
+
+.blog-subtitle {
+  text-align: left;
+  font-family: var(--font-secondary);
+  color: var(--color-text-primary);
+}
+
+.blog-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 2vw 0;
+}
+
+.blog-filters {
+  display: flex;
+  gap: 5vw;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 2vw;
+}
+
+.blog-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-link {
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.active {
+  color: #000000;
+  font-weight: var(--fw-bold);
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+}
+
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.blog-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 4vw;
+}
+
+.blog-item-title {
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: var(--font-secondary);
+}
+
+.blog-item-desc {
+  text-align: left;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 680px) {
@@ -652,6 +758,77 @@ header {
 
   .footer-heading {
     color: var(--color-bg);
+  }
+
+  /* =========================================
+   BLOG PAGE LAYOUT
+   ========================================= */
+
+  .blog-layout {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    align-items: start;
+  }
+
+  .blog-controls {
+    position: sticky;
+    top: 6rem;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .blog-title {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  .blog-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .blog-divider {
+    margin: 0.6rem 0;
+    width: 50%;
+  }
+
+  /* Convert horizontal filters to vertical list */
+  .blog-filters {
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .filter-link {
+    font-size: 0.8rem;
+  }
+
+  /* Right Grid Adjustments */
+  .blog-grid {
+    display: grid;
+    /* Creates 2 columns (for the 4 items -> 2 rows) */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Gap between grid items */
+  }
+
+  .blog-item {
+    gap: 1rem;
+  }
+
+  .blog-img {
+    border-radius: 1rem;
+    aspect-ratio: 16 / 10;
+  }
+
+  .blog-item-title {
+    font-size: 1.4rem;
+  }
+
+  .blog-item-desc {
+    font-size: 1rem;
   }
 }
 
