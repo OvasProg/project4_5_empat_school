@@ -87,6 +87,10 @@ header {
   padding: 5vw 5vw;
   border-radius: 5vw;
   margin: 3vw 5vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo {
@@ -126,7 +130,7 @@ header {
   display: none;
 }
 
-.hero {
+#hero {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -154,7 +158,7 @@ header {
   background: var(--color-accent);
 }
 
-.who-is-it-for {
+#who-is-it-for {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -210,7 +214,7 @@ header {
   display: none;
 }
 
-.how-it-works {
+#how-it-works {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -260,7 +264,7 @@ header {
   text-align: left;
 }
 
-.insights {
+#insights {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -405,6 +409,7 @@ header {
     padding: 0.5rem 1rem;
     border-radius: 0;
     margin: 0;
+    background-color: var(--color-bg);
   }
 
   .logo {
@@ -466,7 +471,7 @@ header {
     filter: brightness(1.2);
   }
 
-  .hero {
+  #hero {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -487,7 +492,7 @@ header {
     line-height: 1.5;
   }
 
-  .who-is-it-for {
+  #who-is-it-for {
     margin-top: 0;
     margin-bottom: 0;
     padding: 2rem;
@@ -522,7 +527,7 @@ header {
     display: none;
   }
 
-  .how-it-works {
+  #how-it-works {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -569,7 +574,7 @@ header {
     font-size: 0.9rem;
   }
 
-  .insights {
+  #insights {
     display: flex;
     justify-content: flex-start;
     align-items: center;
