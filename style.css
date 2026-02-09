@@ -967,7 +967,6 @@ input:checked + .slider:before {
     width: 50%;
   }
 
-  /* Convert horizontal filters to vertical list */
   .blog-filters {
     flex-direction: column;
     overflow-x: visible;
@@ -979,12 +978,10 @@ input:checked + .slider:before {
     font-size: 0.8rem;
   }
 
-  /* Right Grid Adjustments */
   .blog-grid {
     display: grid;
-    /* Creates 2 columns (for the 4 items -> 2 rows) */
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; /* Gap between grid items */
+    gap: 2rem;
   }
 
   .blog-item {
@@ -1065,7 +1062,7 @@ input:checked + .slider:before {
     border-radius: 1.5rem;
     padding: 1.5rem;
     gap: 1.5rem;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.06);
   }
 
   .plan-name {
@@ -1105,7 +1102,7 @@ input:checked + .slider:before {
   }
 
   .plan-btn {
-    margin-top: auto; /* Pushes button to bottom if content varies */
+    margin-top: auto;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 2rem;
